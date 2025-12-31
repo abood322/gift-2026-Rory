@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎁 هدية رأس سنة 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="closeNote()">
+
+<!-- واجهة البداية -->
+<div class="start-card fade-in" id="giftBox">
+  <p class="start-sub">هدية خاصة</p>
+  <h1 class="start-title">رأس سنة 2026</h1>
+  <div class="start-line"></div>
+  <button class="lux-btn" onclick="openGift(event)">فك الهدية</button>
+</div>
+
+<!-- التحميل -->
+<div class="container hidden fade-in" id="loadingBox">
+  <p class="soft-text">أهم شي ابتسامتك يا روري</p>
+  <div class="loader"></div>
+</div>
+
+<!-- الرسالة -->
+<div class="message-wrapper hidden" id="messageWrapper">
+  <div class="container fade-in" id="messageBox">
+    <h1>❤️ سنة 2026 معك أحلى ❤️</h1>
+    <p>
+      كل سنة وأنتِ أجمل صدفة صارت بحياتي  
+      وأتمنى السنة الجديدة تكون بداية حلوة لك قبل أي أحد ✨
+    </p>
+  </div>
+
+  <div class="note-btn" onclick="toggleNote(event)">!</div>
+</div>
+
+<!-- الملاحظة -->
+<div class="note" id="note">
+  ترى هالموقع كله سويته وأنا مبتسم لأنك ببالي 🤍
+</div>
+
+<!-- مشغل الصوت -->
+<div class="audio-box hidden" id="audioBox">
+  <p class="audio-title">إهداء لأحلى إنسانة عرفتها</p>
+  <audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
